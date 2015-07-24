@@ -29,3 +29,4 @@ with open("Wemos.txt") as f:
 		if fline:
 			y = raw_input("Insert Wemo " + str(wemo))
 ex("rm ~/myWemo.txt" # Remove the ~/myWemo.txt needed by wemo_monitor.sh)
+ex("./convert.sh") # Renames the files as necessary
