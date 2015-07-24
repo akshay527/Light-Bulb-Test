@@ -26,5 +26,6 @@ with open("Wemos.txt") as f:
 		ex("./wemo_monitor.sh stop")
 		wemo = wemo + 1
 		fline = f.readline()
-		y = raw_input("Insert Wemo " + str(wemo))
+		if fline:
+			y = raw_input("Insert Wemo " + str(wemo))
 ex("rm ~/myWemo.txt" # Remove the ~/myWemo.txt needed by wemo_monitor.sh)
